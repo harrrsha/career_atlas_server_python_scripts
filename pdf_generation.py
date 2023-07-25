@@ -605,6 +605,7 @@ def pdf_gen(data,ENVIRONMENT):
     pdf_canvas.setFillColor(Color(0.3, 0.3, 0.6))
     pdf_canvas.drawString(x1 + 90, y1 - 532, video_link)
     pdf_canvas.setFillColor(Color(0.2, 0.2, 0.2))
+    #pdf_canvas.setFillColor(Color(0.2, 0.2, 0.2))
     pdf_canvas.drawString(x1 + 360, y1 - 452, interview_start_date_time)
     pdf_canvas.line(x1, y1 - 553, x1 + 543, y1 - 553)
     pdf_canvas.setFillColor(Color(0.25, 0.25, 0.25))
