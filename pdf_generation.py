@@ -162,9 +162,10 @@ def pdf_gen(data,ENVIRONMENT):
     	interview_start_datetime = utc_timezone.localize(date_time_obj)  # Set input as UTC timezone aware
     	interview_start_datetime_ist = interview_start_datetime.astimezone(ist_timezone)  # Convert to IST
     	interview_start_date_time = interview_start_datetime_ist.strftime('%d %b %Y | %I:%M %p')
-        
+
     except (KeyError, ValueError):
     	interview_start_date_time = ""
+
 
     try:
         overall_comments = my_dict['feedbackId']['overallComment']
