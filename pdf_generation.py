@@ -166,7 +166,6 @@ def pdf_gen(data,ENVIRONMENT):
     except (KeyError, ValueError):
     	interview_start_date_time = ""
 
-
     try:
         overall_comments = my_dict['feedbackId']['overallComment']
         output_str = re.sub('<[^<]+?>', '', overall_comments)
